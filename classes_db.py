@@ -37,7 +37,7 @@ class ClassesDB:
         self.connection.close()
 
     def createClassTable(self):
-        self.cursor.execute("CREATE TABLE IF NOT EXISTS classes (id SERIAL PRIMARY KEY, class TEXT, major TEXT, professor TEXT, location TEXT, rating INTEGER)")
+        self.cursor.execute("CREATE TABLE IF NOT EXISTS classes (id SERIAL PRIMARY KEY, clas TEXT, major TEXT, professor TEXT, location TEXT, rating INTEGER)")
         self.connection.commit()
 
     def createUsersTable(self):
